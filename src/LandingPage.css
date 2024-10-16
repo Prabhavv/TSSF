@@ -1,0 +1,64 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Title Styling */
+  .landing-title {
+    /* color: #bd5185; */
+    color:black;
+    font-size: 2em;
+    margin: 20px 0; /* Adjust space as needed */
+    text-align: center;
+    /* font-weight: bold; */
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+  }
+  
+  /* Landscape Image Section */
+  .landscape-section {
+    width: 100%;
+    max-height: 400px; /* Set a max height to keep the image smaller */
+    overflow: hidden;
+  }
+  
+  .landscape-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 400px; /* Ensure the image height is limited */
+  }
+  
+  /* Smaller White Letter Box */
+  .content-box {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 80%; /* Make the box wider */
+    max-width: 1200px; /* Adjust max-width to allow more content */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: -20px;
+    text-align: center;
+  }
+  
+  /* Text section styling */
+  .text-section {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  .text-section p {
+    margin-bottom: 15px;
+  }
+  
+  /* Signature Styling */
+  .signature {
+    color: #7a7a7a;
+    font-style: italic;
+    margin-top: 20px;
+    text-align: right;
+  }

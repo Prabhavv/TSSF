@@ -1,0 +1,110 @@
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+    background-color: #eeeeef;
+    
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center; /* Aligns logo vertically with text */
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust as needed for size */
+    vertical-align: middle;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .nav-link, .dropdown-btn, .reachout-btn {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .nav-link:hover, .dropdown-btn:hover, .reachout-btn:hover {
+    background-color: #d4d4d5;
+  }
+  
+  /* Dropdown Styles */
+  .dropdown {
+    margin-left: auto;
+    position: relative;
+    border-radius: 15px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #eeeeef;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #000;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #d4d4d5;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Burger Icon and Mobile View */
+  .burger-icon {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #eeeeef;
+      width: 100%;
+      display: none;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-link, .dropdown-btn, .reachout-btn {
+      padding: 10px 20px;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .burger-icon {
+      display: block;
+      margin-left: auto;
+    }
+  }
